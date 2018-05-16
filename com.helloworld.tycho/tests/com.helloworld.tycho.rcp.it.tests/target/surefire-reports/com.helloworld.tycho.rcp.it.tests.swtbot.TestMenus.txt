@@ -1,0 +1,5 @@
+-------------------------------------------------------------------------------
+Test set: com.helloworld.tycho.rcp.it.tests.swtbot.TestMenus
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.679 sec - in com.helloworld.tycho.rcp.it.tests.swtbot.TestMenus
+ensureSaveIsDisabledWhenNothingIsDirty(com.helloworld.tycho.rcp.it.tests.swtbot.TestMenus)  Time elapsed: 0.215 sec

@@ -1,0 +1,5 @@
+-------------------------------------------------------------------------------
+Test set: com.helloworld.tycho.rcp.tests.ExampleTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in com.helloworld.tycho.rcp.tests.ExampleTest
+test(com.helloworld.tycho.rcp.tests.ExampleTest)  Time elapsed: 0 sec
