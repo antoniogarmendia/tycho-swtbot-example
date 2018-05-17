@@ -1,9 +1,12 @@
 
 ### Eclipse ###
-*/bin/*
+bin/
 
 ### Maven ###
-*/target/*
+target/
+
+# PDT-specific (PHP Development Tools)
+.buildpath
 
 ### Windows ###
 # Windows thumbnail cache files
