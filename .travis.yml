@@ -1,4 +1,4 @@
-sudo: false
+sudo: required
  
 language: java
  
@@ -9,8 +9,6 @@ cache:
   - $HOME/.m2
  
 env: DISPLAY=:99.0
-  global:
-  - GH_REF: github.com/mondo-project/mondo-hawk.git
  
 install: true
  
@@ -22,5 +20,5 @@ addons:
 before_script:
  - sh -e /etc/init.d/xvfb start
  - metacity --sm-disable --replace 2> metacity.err &
-  
-script: bash ./deploy.sh 
+ 
+script: bash ./deploy.sh
