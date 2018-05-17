@@ -23,20 +23,8 @@ before_script:
  - sh -e /etc/init.d/xvfb start
  - metacity --sm-disable --replace 2> metacity.err &
  
-script: 
- - mvn -f com.helloworld.tycho/pom.xml --quiet clean install
+script: bash ./deploy.sh
 
-deploy:
-  provider: pages
-  skip-cleanup: true
-  local-dir: swtHelloworld-updates
-  github-token: $GITHUB_TOKEN
-  keep-history: true
-  local-dir: swtHelloworld-updates
-  verbose: true
-  on:
-    branch: master
-  tags: true
 
 
  
