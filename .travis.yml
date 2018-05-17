@@ -9,6 +9,8 @@ cache:
   - $HOME/.m2
  
 env: DISPLAY=:99.0
+  global:
+  - GH_REF: github.com/mondo-project/mondo-hawk.git
  
 install: true
  
@@ -21,5 +23,20 @@ before_script:
  - sh -e /etc/init.d/xvfb start
  - metacity --sm-disable --replace 2> metacity.err &
  
-script: bash ./deploy.sh
+script: 
+ - mvn -f com.helloworld.tycho/pom.xml --quiet clean install
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local-dir: swtHelloworld-updates
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  local-dir: swtHelloworld-updates
+  verbose: true
+  on:
+    branch: master
+  tags: true
+
+
  
