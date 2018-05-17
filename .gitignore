@@ -1,12 +1,13 @@
 
 ### Eclipse ###
 bin/
+.settings/
 
 ### Maven ###
 target/
 
-# PDT-specific (PHP Development Tools)
-.buildpath
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
 
 ### Windows ###
 # Windows thumbnail cache files
