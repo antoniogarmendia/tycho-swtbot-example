@@ -29,5 +29,5 @@ mvn --quiet clean install
 
 # Only continue deploying to update site for non-PR commits to the master branch
 #if [[ "$TRAVIS_BRANCH" == 'master' && "$TRAVIS_PULL_REQUEST" == 'false' ]]; then
-    deploy_updates
+#    deploy_updates
 #fi
