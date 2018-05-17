@@ -21,16 +21,16 @@ before_script:
  - sh -e /etc/init.d/xvfb start
  - metacity --sm-disable --replace 2> metacity.err &
  
-script: bash ./deploy.sh
+script: 
+  - mvn -f com.helloworld.tycho/pom.xml --quiet clean install
 
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep-history: true
+  keep-history: false
   local-dir: com.helloworld.tycho/releng/com.helloworld.tycho.update/target/repository
-  target-branch: gh-pages
-  repo: update-helloworld
+  target-branch: gh-pages  
   verbose: true
   on:
     branch: master
