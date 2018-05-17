@@ -28,6 +28,6 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep-history: true
-  local-dir: swtHelloworld-updates
+  local-dir: ../com.helloworld.tycho/releng/com.helloworld.tycho.update/target/repository
   on:
     branch: master
