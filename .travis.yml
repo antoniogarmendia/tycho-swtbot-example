@@ -4,12 +4,3 @@ sudo: required
 language: java
  
 jdk: oraclejdk8
- 
-install: true
-
-before_install:
-  - sudo apt-get install metacity
- 
-before_script:
- - metacity --sm-disable --replace 2> metacity.err &
-
