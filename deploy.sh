@@ -25,7 +25,7 @@ deploy_updates() {
 set -o errexit
 
 # Run the regular build
-mvn --quiet clean install
+mvn -f /com.helloworld.tycho/pom.xml --quiet clean install
 
 # Only continue deploying to update site for non-PR commits to the master branch
 #if [[ "$TRAVIS_BRANCH" == 'master' && "$TRAVIS_PULL_REQUEST" == 'false' ]]; then
