@@ -24,10 +24,6 @@ deploy_updates() {
 # Exit immediately if something goes wrong
 set -o errexit
 
-# Metacity to SWTbot
-- sudo apt-get install metacity
-- metacity --sm-disable --replace 2> metacity.err &
-
 # Run the regular build
 mvn -f com.helloworld.tycho/pom.xml --quiet clean install
 
