@@ -24,7 +24,6 @@ before_script:
  - metacity --sm-disable --replace 2> metacity.err &
  # Specify a display with xvfb for UI testing
  - "export DISPLAY=:99.0"
- - "sh -e /etc/init.d/xvfb start"
  - sleep 3 # give xvfb some time to start
 
 script: bash ./deploy.sh 
